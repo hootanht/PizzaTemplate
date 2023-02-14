@@ -1,0 +1,63 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.header .header-menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  text-decoration: none;
+  list-style: none;
+  color: #2D2D2D;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 18.75px;
+}
+.header .header-menu li {
+  margin: 24px 48px;
+}
+.header .header-menu .top-pizza-menu-item {
+  position: relative;
+}
+.header .header-menu .top-pizza-menu-item .top-menu-item-red-cs {
+  color: #DA1315;
+}
+.header .header-menu .top-pizza-menu-item .top-pizza-image {
+  position: absolute;
+  top: -10px;
+  left: -15px;
+}
+.header .header-menu .card-counter {
+  background-color: #DA1315;
+  color: #FFFFFF;
+  padding: 5px 10px;
+  border-radius: 8px;
+  font-size: 12px;
+  line-height: 14.06px;
+  font-weight: 700;
+  font-family: "Roboto", sans-serif;
+  margin-left: 8px;
+}
+
+.container {
+  padding: 0px 121px;
+}
+.container .top-headline {
+  font-size: 61.33px;
+  line-height: 81.76px;
+  font-weight: 700;
+  font-family: "Playfair Display", serif;
+  color: #2D2D2D;
+}
+.container .subtext-headline {
+  font-size: 18px;
+  line-height: 21.09px;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+  color: #696969;
+}/*# sourceMappingURL=style.css.map */
