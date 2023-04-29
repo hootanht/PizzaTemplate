@@ -1,7 +1,7 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 // ------------------variables------------------
@@ -21,25 +21,22 @@ $height-50: 50%;
 $height-25: 25%;
 $height-0: 0%;
 
-
-
 // colors
-$main-black: #2D2D2D;
-$gray-0: #F3F3F3;
-$gray-1: #DFDFDF;
-$gray-2: #B3B3B3;
+$main-black: #2d2d2d;
+$gray-0: #f3f3f3;
+$gray-1: #dfdfdf;
+$gray-2: #b3b3b3;
 $gray-3: #696969;
-$gray-4: #4B4B4B;
+$gray-4: #4b4b4b;
 
-$light-red: #FBE7E8;
-$middle-red: #E97173;
-$main-red: #DA1315;
-$dark-red: #AE0F11;
+$light-red: #fbe7e8;
+$middle-red: #e97173;
+$main-red: #da1315;
+$dark-red: #ae0f11;
 
-$blue:#1977F3;
+$blue: #1977f3;
 
-$white: #FFFFFF;
-
+$white: #ffffff;
 
 // ------------------mixins------------------
 // generate font class in scss
@@ -47,9 +44,8 @@ $white: #FFFFFF;
   font-size: $font-size;
   line-height: $line-height;
   font-weight: $font-weight;
-    font-family: $font-family;
+  font-family: $font-family;
 }
-
 
 .header {
   .header-menu {
@@ -64,7 +60,7 @@ $white: #FFFFFF;
     font-family: $roboto-font-family;
     font-size: $font-size-16;
     font-weight: $font-weight-700;
-    line-height : $line-height-18;
+    line-height: $line-height-18;
 
     li {
       margin: 24px 48px;
@@ -82,28 +78,142 @@ $white: #FFFFFF;
       }
     }
 
-    .card-counter{
-        background-color: $main-red;
-        color: $white;
-        padding :5px 10px;
-        border-radius: 8px;
-        @include font(12px, 14.06px, 700, $roboto-font-family);
-        margin-left: 8px;
+    .card-counter {
+      background-color: $main-red;
+      color: $white;
+      padding: 5px 10px;
+      border-radius: 8px;
+      @include font(12px, 14.06px, 700, $roboto-font-family);
+      margin-left: 8px;
     }
   }
 }
 
-.container{
-    padding: 0px 121px;
-    .top-headline{
-        @include font(61.33px, 81.76px, 700, $playfair-font-family);
-        color: $main-black;
-    }
+.container {
+  padding: 0px 121px;
+  .top-headline {
+    @include font(61.33px, 81.76px, 700, $playfair-font-family);
+    color: $main-black;
+  }
 
-    .subtext-headline{
-        @include font(18px, 21.09px, 400, $roboto-font-family);
-        color: $gray-3;
+  .subtext-headline {
+    @include font(18px, 21.09px, 400, $roboto-font-family);
+    color: $gray-3;
+  }
+
+  .pizza-first-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    .pizza-card {
+      max-width: 276px;
+      box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.1);
+      border-radius: 16px;
+      padding: 0px 16px 16px 16px;
+      position: relative;
+      top: 94px;
+
+      .card-container {
+        position: relative;
+
+        .card-image {
+          position: absolute;
+          margin-left: auto;
+          margin-right: auto;
+          left: 0;
+          right: 0;
+          text-align: center;
+          top: -60px;
+        }
+
+        .pizza-header-text {
+          @include font(16px, 18.75px, 500, $roboto-font-family);
+          color: $main-black;
+          text-align: center;
+          padding-top: 78px;
+        }
+
+        .pizza-description {
+          @include font(13px, 19px, 400, $roboto-font-family);
+          color: $gray-3;
+          margin-top: 16px;
+          text-align: center;
+        }
+
+        .card-separator-line {
+          width: 100%;
+          height: 1px;
+          background-color: $gray-1;
+          margin: 16px 0px;
+          padding: 0px 16px;
+        }
+
+        .pizza-size-action {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          gap: 8px;
+          align-items: center;
+
+          .pizza-small-size {
+            @include font(12px, 14.06px, 500, $roboto-font-family);
+            color: $white;
+            padding: 10px 8px;
+            border-radius: 8px;
+            background-color: $main-black;
+            border: 1px solid $main-black;
+            width: 100%;
+          }
+          .pizza-gang-size {
+            @include font(12px, 14.06px, 500, $roboto-font-family);
+            color: $main-black;
+            padding: 10px 8px;
+            border-radius: 8px;
+            background-color: $white;
+            border: 1px solid $gray-2;
+            width: 100%;
+          }
+
+          .pizza-time-duration-text {
+            @include font(10px, 11.72px, 500, $roboto-font-family);
+          }
+        }
+
+        .pizza-card-footer {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: center;
+          margin-top: 16px;
+
+          .pizza-price {
+            @include font(22px, 26px, 500, $roboto-font-family);
+            color: $main-black;
+
+            .pizza-price-after-dot {
+              @include font(16px, 19px, 500, $roboto-font-family);
+            }
+          }
+
+          .pizza-add-to-cart-button {
+            @include font(16px, 19px, 500, $roboto-font-family);
+            color: $main-red;
+            padding-right: 8px;
+            border-radius: 8px;
+            background-color: $white;
+            border: 1px solid $main-red;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+
+            .add-to-card-icon {
+              margin: 8px 8px 8px 12px;
+            }
+          }
+        }
+      }
     }
+  }
 }
-
-
