@@ -96,121 +96,244 @@ $white: #ffffff;
     color: $main-black;
   }
 
+  .location-headline {
+    @include font(61.33px, 81.76px, 700, $playfair-font-family);
+    color: $main-black;
+    margin-top: 48px;
+  }
+
+  .pizza-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+  }
+
   .subtext-headline {
     @include font(18px, 21.09px, 400, $roboto-font-family);
     color: $gray-3;
+  }
+
+  .order-card {
+    min-width: 300px;
+    background-color: $white;
+    border-radius: $font-size-16;
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.1);
+    padding: 16px;
+    position: sticky;
+    margin-top: 90px;
+    margin-left: 24px;
+    top: 0;
+
+    .order-hedear {
+      @include font(24px, 33px, 500, $roboto-font-family);
+
+      .order-item {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 24px;
+
+        .order-item-action {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          gap: 13px;
+
+          img {
+            width: 48px;
+            height: 48px;
+          }
+
+          span {
+            @include font(12px, 14px, 500, $roboto-font-family);
+            color: $main-red;
+          }
+
+          p {
+            @include font(14px, 16px, 500, $roboto-font-family);
+            color: $main-black;
+          }
+        }
+
+        .item-cost {
+          @include font(16px, 19px, 500, $roboto-font-family);
+          color: $main-black;
+        }
+      }
+    }
+
+    .order-card-separator-line {
+      width: 100%;
+      height: 1px;
+      background-color: $gray-1;
+      margin: 24px 0px;
+    }
+
+    .order-button {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      margin-top: 24px;
+      background-color: $main-red;
+      color: $white;
+      width: 100%;
+      border-radius: 12px;
+      border: none;
+      padding: 21px 16px;
+      @include font(18px, 21px, 500, $roboto-font-family);
+    }
+
+    .order-details {
+      .order-details-item {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 10px;
+
+        p {
+          @include font(14px, 33px, 500, $roboto-font-family);
+          color: $main-black;
+        }
+      }
+
+      .order-card-separator-line {
+        width: 100%;
+        height: 1px;
+        background-color: $gray-1;
+        margin: 24px 0px;
+      }
+    }
+
+    .order-total {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 24px;
+
+      p {
+        @include font(16px, 19px, 500, $roboto-font-family);
+        color: $main-black;
+      }
+    }
   }
 
   .pizza-first-row {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    
-    .pizza-card {
-      max-width: 276px;
-      box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.1);
-      border-radius: 16px;
-      padding: 0px 16px 16px 16px;
+    flex-wrap: wrap;
+  }
+
+  .pizza-card {
+    max-width: 276px;
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.1);
+    border-radius: 16px;
+    padding: 0px 16px 16px 16px;
+    position: relative;
+    top: 94px;
+    margin-bottom: 86px;
+
+    .card-container {
       position: relative;
-      top: 94px;
 
-      .card-container {
-        position: relative;
+      .card-image {
+        position: absolute;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+        text-align: center;
+        top: -60px;
+      }
 
-        .card-image {
-          position: absolute;
-          margin-left: auto;
-          margin-right: auto;
-          left: 0;
-          right: 0;
-          text-align: center;
-          top: -60px;
-        }
+      .pizza-header-text {
+        @include font(16px, 18.75px, 500, $roboto-font-family);
+        color: $main-black;
+        text-align: center;
+        padding-top: 78px;
+      }
 
-        .pizza-header-text {
-          @include font(16px, 18.75px, 500, $roboto-font-family);
-          color: $main-black;
-          text-align: center;
-          padding-top: 78px;
-        }
+      .pizza-description {
+        @include font(13px, 19px, 400, $roboto-font-family);
+        color: $gray-3;
+        margin-top: 16px;
+        text-align: center;
+      }
 
-        .pizza-description {
-          @include font(13px, 19px, 400, $roboto-font-family);
-          color: $gray-3;
-          margin-top: 16px;
-          text-align: center;
-        }
+      .card-separator-line {
+        width: 100%;
+        height: 1px;
+        background-color: $gray-1;
+        margin: 16px 0px;
+        padding: 0px 16px;
+      }
 
-        .card-separator-line {
+      .pizza-size-action {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 8px;
+        align-items: center;
+
+        .pizza-small-size {
+          @include font(12px, 14.06px, 500, $roboto-font-family);
+          color: $white;
+          padding: 10px 5.6px;
+          border-radius: 8px;
+          background-color: $main-black;
+          border: 1px solid $main-black;
           width: 100%;
-          height: 1px;
-          background-color: $gray-1;
-          margin: 16px 0px;
-          padding: 0px 16px;
+        }
+        .pizza-gang-size {
+          @include font(12px, 14.06px, 500, $roboto-font-family);
+          color: $main-black;
+          padding: 10px 8px;
+          border-radius: 8px;
+          background-color: $white;
+          border: 1px solid $gray-2;
+          width: 100%;
         }
 
-        .pizza-size-action {
-          display: flex;
-          flex-direction: row;
-          justify-content: space-between;
-          gap: 8px;
-          align-items: center;
-
-          .pizza-small-size {
-            @include font(12px, 14.06px, 500, $roboto-font-family);
-            color: $white;
-            padding: 10px 8px;
-            border-radius: 8px;
-            background-color: $main-black;
-            border: 1px solid $main-black;
-            width: 100%;
-          }
-          .pizza-gang-size {
-            @include font(12px, 14.06px, 500, $roboto-font-family);
-            color: $main-black;
-            padding: 10px 8px;
-            border-radius: 8px;
-            background-color: $white;
-            border: 1px solid $gray-2;
-            width: 100%;
-          }
-
-          .pizza-time-duration-text {
-            @include font(10px, 11.72px, 500, $roboto-font-family);
-          }
+        .pizza-time-duration-text {
+          @include font(10px, 11.72px, 500, $roboto-font-family);
         }
+      }
 
-        .pizza-card-footer {
-          display: flex;
-          flex-direction: row;
-          justify-content: space-between;
-          align-items: center;
-          margin-top: 16px;
+      .pizza-card-footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 16px;
 
-          .pizza-price {
-            @include font(22px, 26px, 500, $roboto-font-family);
-            color: $main-black;
+        .pizza-price {
+          @include font(22px, 26px, 500, $roboto-font-family);
+          color: $main-black;
 
-            .pizza-price-after-dot {
-              @include font(16px, 19px, 500, $roboto-font-family);
-            }
-          }
-
-          .pizza-add-to-cart-button {
+          .pizza-price-after-dot {
             @include font(16px, 19px, 500, $roboto-font-family);
-            color: $main-red;
-            padding-right: 8px;
-            border-radius: 8px;
-            background-color: $white;
-            border: 1px solid $main-red;
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            align-items: center;
+          }
+        }
 
-            .add-to-card-icon {
-              margin: 8px 8px 8px 12px;
-            }
+        .pizza-add-to-cart-button {
+          @include font(16px, 19px, 500, $roboto-font-family);
+          color: $main-red;
+          padding-right: 8px;
+          border-radius: 8px;
+          background-color: $white;
+          border: 1px solid $main-red;
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+
+          .add-to-card-icon {
+            margin: 8px 8px 8px 12px;
           }
         }
       }

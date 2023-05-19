@@ -54,6 +54,20 @@
   font-family: "Playfair Display", serif;
   color: #2d2d2d;
 }
+.container .location-headline {
+  font-size: 61.33px;
+  line-height: 81.76px;
+  font-weight: 700;
+  font-family: "Playfair Display", serif;
+  color: #2d2d2d;
+  margin-top: 48px;
+}
+.container .pizza-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: start;
+}
 .container .subtext-headline {
   font-size: 18px;
   line-height: 21.09px;
@@ -61,23 +75,137 @@
   font-family: "Roboto", sans-serif;
   color: #696969;
 }
+.container .order-card {
+  min-width: 300px;
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.1);
+  padding: 16px;
+  position: sticky;
+  margin-top: 90px;
+  margin-left: 24px;
+  top: 0;
+}
+.container .order-card .order-hedear {
+  font-size: 24px;
+  line-height: 33px;
+  font-weight: 500;
+  font-family: "Roboto", sans-serif;
+}
+.container .order-card .order-hedear .order-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 24px;
+}
+.container .order-card .order-hedear .order-item .order-item-action {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 13px;
+}
+.container .order-card .order-hedear .order-item .order-item-action img {
+  width: 48px;
+  height: 48px;
+}
+.container .order-card .order-hedear .order-item .order-item-action span {
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: 500;
+  font-family: "Roboto", sans-serif;
+  color: #da1315;
+}
+.container .order-card .order-hedear .order-item .order-item-action p {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 500;
+  font-family: "Roboto", sans-serif;
+  color: #2d2d2d;
+}
+.container .order-card .order-hedear .order-item .item-cost {
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 500;
+  font-family: "Roboto", sans-serif;
+  color: #2d2d2d;
+}
+.container .order-card .order-card-separator-line {
+  width: 100%;
+  height: 1px;
+  background-color: #dfdfdf;
+  margin: 24px 0px;
+}
+.container .order-card .order-button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 24px;
+  background-color: #da1315;
+  color: #ffffff;
+  width: 100%;
+  border-radius: 12px;
+  border: none;
+  padding: 21px 16px;
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 500;
+  font-family: "Roboto", sans-serif;
+}
+.container .order-card .order-details .order-details-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+.container .order-card .order-details .order-details-item p {
+  font-size: 14px;
+  line-height: 33px;
+  font-weight: 500;
+  font-family: "Roboto", sans-serif;
+  color: #2d2d2d;
+}
+.container .order-card .order-details .order-card-separator-line {
+  width: 100%;
+  height: 1px;
+  background-color: #dfdfdf;
+  margin: 24px 0px;
+}
+.container .order-card .order-total {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 24px;
+}
+.container .order-card .order-total p {
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 500;
+  font-family: "Roboto", sans-serif;
+  color: #2d2d2d;
+}
 .container .pizza-first-row {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
-.container .pizza-first-row .pizza-card {
+.container .pizza-card {
   max-width: 276px;
   box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.1);
   border-radius: 16px;
   padding: 0px 16px 16px 16px;
   position: relative;
   top: 94px;
+  margin-bottom: 86px;
 }
-.container .pizza-first-row .pizza-card .card-container {
+.container .pizza-card .card-container {
   position: relative;
 }
-.container .pizza-first-row .pizza-card .card-container .card-image {
+.container .pizza-card .card-container .card-image {
   position: absolute;
   margin-left: auto;
   margin-right: auto;
@@ -86,7 +214,7 @@
   text-align: center;
   top: -60px;
 }
-.container .pizza-first-row .pizza-card .card-container .pizza-header-text {
+.container .pizza-card .card-container .pizza-header-text {
   font-size: 16px;
   line-height: 18.75px;
   font-weight: 500;
@@ -95,7 +223,7 @@
   text-align: center;
   padding-top: 78px;
 }
-.container .pizza-first-row .pizza-card .card-container .pizza-description {
+.container .pizza-card .card-container .pizza-description {
   font-size: 13px;
   line-height: 19px;
   font-weight: 400;
@@ -104,33 +232,33 @@
   margin-top: 16px;
   text-align: center;
 }
-.container .pizza-first-row .pizza-card .card-container .card-separator-line {
+.container .pizza-card .card-container .card-separator-line {
   width: 100%;
   height: 1px;
   background-color: #dfdfdf;
   margin: 16px 0px;
   padding: 0px 16px;
 }
-.container .pizza-first-row .pizza-card .card-container .pizza-size-action {
+.container .pizza-card .card-container .pizza-size-action {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   gap: 8px;
   align-items: center;
 }
-.container .pizza-first-row .pizza-card .card-container .pizza-size-action .pizza-small-size {
+.container .pizza-card .card-container .pizza-size-action .pizza-small-size {
   font-size: 12px;
   line-height: 14.06px;
   font-weight: 500;
   font-family: "Roboto", sans-serif;
   color: #ffffff;
-  padding: 10px 8px;
+  padding: 10px 5.6px;
   border-radius: 8px;
   background-color: #2d2d2d;
   border: 1px solid #2d2d2d;
   width: 100%;
 }
-.container .pizza-first-row .pizza-card .card-container .pizza-size-action .pizza-gang-size {
+.container .pizza-card .card-container .pizza-size-action .pizza-gang-size {
   font-size: 12px;
   line-height: 14.06px;
   font-weight: 500;
@@ -142,33 +270,33 @@
   border: 1px solid #b3b3b3;
   width: 100%;
 }
-.container .pizza-first-row .pizza-card .card-container .pizza-size-action .pizza-time-duration-text {
+.container .pizza-card .card-container .pizza-size-action .pizza-time-duration-text {
   font-size: 10px;
   line-height: 11.72px;
   font-weight: 500;
   font-family: "Roboto", sans-serif;
 }
-.container .pizza-first-row .pizza-card .card-container .pizza-card-footer {
+.container .pizza-card .card-container .pizza-card-footer {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   margin-top: 16px;
 }
-.container .pizza-first-row .pizza-card .card-container .pizza-card-footer .pizza-price {
+.container .pizza-card .card-container .pizza-card-footer .pizza-price {
   font-size: 22px;
   line-height: 26px;
   font-weight: 500;
   font-family: "Roboto", sans-serif;
   color: #2d2d2d;
 }
-.container .pizza-first-row .pizza-card .card-container .pizza-card-footer .pizza-price .pizza-price-after-dot {
+.container .pizza-card .card-container .pizza-card-footer .pizza-price .pizza-price-after-dot {
   font-size: 16px;
   line-height: 19px;
   font-weight: 500;
   font-family: "Roboto", sans-serif;
 }
-.container .pizza-first-row .pizza-card .card-container .pizza-card-footer .pizza-add-to-cart-button {
+.container .pizza-card .card-container .pizza-card-footer .pizza-add-to-cart-button {
   font-size: 16px;
   line-height: 19px;
   font-weight: 500;
@@ -183,6 +311,6 @@
   justify-content: center;
   align-items: center;
 }
-.container .pizza-first-row .pizza-card .card-container .pizza-card-footer .pizza-add-to-cart-button .add-to-card-icon {
+.container .pizza-card .card-container .pizza-card-footer .pizza-add-to-cart-button .add-to-card-icon {
   margin: 8px 8px 8px 12px;
 }/*# sourceMappingURL=style.css.map */
