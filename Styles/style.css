@@ -44,6 +44,39 @@
   margin-left: 8px;
 }
 
+.footer .footer-breake-line {
+  margin-top: 48px;
+}
+.footer .footer-items {
+  padding: 17.75px 121px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 16px;
+}
+.footer .footer-items .footer-text {
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: 700;
+  font-family: "Roboto", sans-serif;
+  color: #2d2d2d;
+}
+.footer .footer-items .footer-facebook .footer-facebook-items {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+}
+.footer .footer-items .footer-facebook .footer-text {
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: 700;
+  font-family: "Roboto", sans-serif;
+  color: #2d2d2d;
+}
+
 .container {
   padding: 0px 121px;
 }
@@ -53,6 +86,120 @@
   font-weight: 700;
   font-family: "Playfair Display", serif;
   color: #2d2d2d;
+}
+.container .our-location {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 24px;
+}
+.container .our-location .our-location-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: start;
+  width: 100%;
+}
+.container .our-location .our-location-details .btn-visit-facebook {
+  background-color: #1977f3;
+  color: #ffffff;
+  padding: 12px 10.5px;
+  margin-top: 32px;
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+}
+.container .our-location .our-location-details .btn-visit-facebook .btn-facebook-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+.container .our-location .our-location-details .btn-visit-facebook .btn-facebook-item .facebook-icon {
+  width: 24px;
+  height: 24px;
+}
+.container .our-location .our-location-details .btn-visit-facebook .btn-facebook-item .facebook-text {
+  font-size: 16px;
+  line-height: 18.75px;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+  color: #ffffff;
+  margin-left: 8px;
+  margin-top: 3px;
+}
+.container .our-location .our-location-details .address-name {
+  font-size: 27.3355px;
+  line-height: 36px;
+  font-weight: 700;
+  font-family: "Playfair Display", serif;
+  color: #2d2d2d;
+}
+.container .our-location .our-location-details .contact-phone {
+  margin-top: 32px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.container .our-location .our-location-details .contact-phone .our-location-details-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: start;
+  gap: 8px;
+  margin-top: 8px;
+}
+.container .our-location .our-location-details .contact-phone .our-location-details-header .location-icon {
+  width: 24px;
+  height: 24px;
+}
+.container .our-location .our-location-details .contact-phone .our-location-details-header .location-text {
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 700;
+  font-family: "Roboto", sans-serif;
+  color: #2d2d2d;
+}
+.container .our-location .our-location-details .contact-phone .our-location-details-header .location-address {
+  font-size: 16px;
+  line-height: 18.75px;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+  color: #2d2d2d;
+}
+.container .our-location .our-location-details .location .our-location-details-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  gap: 8px;
+  margin-top: 8px;
+}
+.container .our-location .our-location-details .location .our-location-details-header .location-icon {
+  width: 24px;
+  height: 24px;
+}
+.container .our-location .our-location-details .location .our-location-details-header .location-text {
+  font-size: 18px;
+  line-height: 12.09px;
+  font-weight: 700;
+  font-family: "Roboto", sans-serif;
+  color: #2d2d2d;
+}
+.container .our-location .our-location-details .location .location-address {
+  font-size: 16px;
+  line-height: 18.75px;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+  color: #2d2d2d;
+  margin-left: 32px;
+  margin-top: 5px;
 }
 .container .location-headline {
   font-size: 61.33px;
